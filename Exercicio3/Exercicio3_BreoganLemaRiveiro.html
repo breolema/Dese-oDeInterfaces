@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Páxina de rexitro">
+    <meta name="keywords" content="Palabra chave 1, Palabra chave 2, Palabra chave 3">
+    <meta name="author" content="Breogan Lema Riveiro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rexitro</title>
+    <style>
+        body {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        img{
+            height: 250px;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="centro.jpg" alt="IES Maximino Romero de Lema">
+    <form action="">
+        <label for="nome">Nombre completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome e Apelidos" pattern="[A-Za-z -]+" required
+            title="So están permitidos letras e guións"><br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="usuario@dominio.com"
+            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+            required><br><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" minlength="6"
+            required><br><br>
+
+        <label>Xénero:</label><br>
+        <label><input type="radio" name="xenero" value="masculino" required> Masculino</label>
+        <label><input type="radio" name="xenero" value="femenino" required> Femenino</label><br><br>
+
+        <label for="asignatura">Asignatura:</label>
+        <select id="asignatura" name="asignatura" required>
+            <option value="" disabled selected>Selecciona una asignatura</option>
+            <option value="desenvolvemento-servidor">Desenvolvemento Web en Contorno Servidor</option>
+            <option value="diseno">Diseño de Interfaces</option>
+            <option value="desenvolvemento-cliente">Desenvolvementi web en contorno cliente</option>
+            <option value="despregamento">Despregamento de applicacions web</option>
+            <option value="empresas">Empresa iniciativa e emprendedora</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Registrar">
+    </form>
+
+</body>
+
+</html>
