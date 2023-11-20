@@ -17,15 +17,22 @@
             height: 100vh;
             margin: 0;
         }
-        img{
+
+        img {
             height: 250px;
-            padding: 50px;
+        }
+
+        ol{
+            text-align: left;
         }
     </style>
 </head>
 
 <body>
-    <img src="centro.jpg" alt="IES Maximino Romero de Lema">
+    <figure>
+        <img src="centro.jpg" alt="IES Maximino Romero de Lema">
+        <figcaption>Imaxe do IES Maximino Romero de Lema</figcaption><br><br>
+    </figure>
     <form action="">
         <label for="nome">Nombre completo:</label>
         <input type="text" id="nome" name="nome" placeholder="Nome e Apelidos" pattern="[A-Za-z -]+" required
@@ -56,6 +63,71 @@
         <br><br>
         <input type="submit" value="Registrar">
     </form>
+    <br><br>
+    <video controls muted>
+        <source src="pepa_pig.mp4" type="video/mp4">
+        <source src="pepa_pig.webm" type="video/webm">
+        No soporta el formato del video.
+    </video>
+    <br>
+    <audio controls>
+        <source src="cosecha-propia-de-patacas.mp3" type="audio/mp3">
+        <source src="cosecha-propia-de-patacas.ogg" type="audio/ogg">
+        No soporta el formato del audio.
+    </audio>
+    <br><br>
+
+    <ol>
+        <li>
+            <strong>Formulario HTML</strong>
+            <ul>
+                <li>Crear un formulario de rexistro para alumnos do IES.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Etiqueta "figure" no footer</strong>
+            <ul>
+                <li>Empregar "figure" para insertar unha imaxe antes do formulario.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Etiqueta "picture"</strong>
+            <ul>
+                <li>Utilizar "picture" para insertar unha imaxe no "footer" que cambie de tamaño en función da pantalla.</li>
+                <li>Añadimos unha etiqueta "figcaption" para añadirlle un texto debaixo de forma explicativa</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Etiqueta "video"</strong>
+            <ul>
+                <li>Empregar "video" para insertar un vídeo.</li>
+                <li>Empregaremos 2 fomratos diferentes: mp4 e webm</li>
+                <li>Os videos descargaremolos con un convertidor, que eu neste caso empreguei unha web.<a href="https://ytshorts.savetube.me/es/10">Pincha aquí</a></li>
+                <li>No apartado anterior descargamolo en mp4 e para combertilo en webm empregamos outra páxina. <a href="https://convertio.co/es/mp4-webm/">Pincha aquí</a></li>
+                <li>Empreganse 2 formatos xa que u navegador pode non aceptar un e si aceptar outro</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Etiqueta "audio"</strong>
+            <ul>
+                <li>Usar "audio" para insertar un arquivo de audio.</li>
+                <li>Empregaremos 2 fomratos diferentes: mp3 e ogg</li>
+                <li>Para conseguir o audio do video primeiro descarguei o video de YouTube empregando a páxina
+                    que eleximos antes (no apartado do video).
+                </li>
+                <li>Unha vez descargado empregamos un convertidor a MP3 e a ogg. <a href="">Esta páxina</a></li>
+                <li>Empreganse 2 formatos xa que u navegador pode non aceptar un e si aceptar outro</li>
+            </ul>
+        </li>
+    </ol>
+    <br>
+    <footer style="background-color: lightblue; margin-bottom: 0px;">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="centro.jpg">
+            <source media="(min-width: 768px)" srcset="centro.jpg">
+            <img src="centro-footer.jpg" alt="Imaxe no footer">
+        </picture>
+    </footer>
 
 </body>
 
